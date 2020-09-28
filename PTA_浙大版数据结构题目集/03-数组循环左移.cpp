@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include<queue>
 using namespace std;
 
@@ -10,16 +10,16 @@ int main() {
 	int temp = 0;
 	queue<int> q;
 	cin >> N>>m;
-	m = m % N;						//µ±m¹ı´óÊ±
+	m = m % N;						//å½“mè¿‡å¤§æ—¶
 
-	/*¶ÁÈëÊı×é*/
+	/*è¯»å…¥æ•°ç»„*/
 	for (i = 0; i < N; i++) {
 		cin >> temp;
 		q.push(temp);
 	}
 
 
-	/*½øĞĞÑ­»·ÒÆÎ»*/
+	/*è¿›è¡Œå¾ªç¯ç§»ä½*/
 	while (m--) {
 		q.push(q.front());
 		q.pop();
