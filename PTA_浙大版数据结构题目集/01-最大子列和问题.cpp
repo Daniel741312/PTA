@@ -61,7 +61,7 @@ int MaxSubSeqSum2(vector<int>& v){
 	return maxSum;
 }
 
-/*分而治之(还没看懂)*/
+/*分而治之(不好理解还不是最优)*/
 int DivideAndConquer(vector<int>& v, int left, int right) {
 	int MaxLeftSum, MaxRightSum;				//存放左右子问题的解
 	int MaxLeftBorderSum, MaxRightBorderSum;	//存放跨分界线的结果
